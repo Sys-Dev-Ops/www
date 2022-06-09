@@ -26,13 +26,53 @@
   <script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5198805534719293" crossorigin="anonymous"></script> 
   <script async="" custom-element="amp-auto-ads" src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
 </script> 
- </head> 
- <body class="bg-light" id="top"> <amp-auto-ads type="adsense" data-ad-client="ca-pub-5198805534719293"> 
-  </amp-auto-ads> 
-  <header class="d-print-none"> 
-   <div class="container text-center text-lg-left"> 
-    <div class="pt-4 clearfix"> 
+<script language="javascript">
+function SelectRedirect(){
+// ON selection of section this function will work
+//alert( document.getElementById('s1').value);
+
+switch(document.getElementById('s1').value)
+{
+case "German":
+window.location="./DE.html";
+break;
+
+case "Czech":
+window.location="./CZE.html";
+break;
+
+case "French":
+window.location="./FR.html";
+break;
+case "spanish":
+window.location="./ESP.html";
+break;
+
+/// Can be extended to other different selections of SubCategory //////
+default:
+window.location="../"; // if no selection matches then redirected to home page
+break;
+}// end of switch 
+}
+////////////////// 
+</script>
+  </head>
+  <body class="bg-light" id="top">
+  <amp-auto-ads type="adsense"
+        data-ad-client="ca-pub-5198805534719293">
+</amp-auto-ads>
+    <header class="d-print-none">
+      <div class="container text-center text-lg-left">
+        <div class="pt-4 clearfix">
      <h1 class="site-title mb-0">Curriculum Vitae </h1> 
+	 		  <SELECT id="s1" NAME="section" onChange="SelectRedirect();">
+			<Option value="">Langue</option>
+			<Option value="Czech">Czech</option>
+			<Option value="French">French</option>
+			<Option value="spanish">Spanish</option>
+			<Option value="German">German</option>
+			</SELECT>
+
      <div class="site-nav"> 
       <nav role="navigation"> 
        <ul class="nav justify-content-center"> 
