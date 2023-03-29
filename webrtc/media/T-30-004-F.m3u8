@@ -1,0 +1,4 @@
+#EXTM3U
+#EXTVLCOPT:start-time=1
+#EXTVLCOPT:stop-time=60
+rtsp://in.amitabh.eu:2001/live/ch00_1
